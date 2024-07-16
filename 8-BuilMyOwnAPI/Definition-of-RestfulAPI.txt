@@ -1,0 +1,13 @@
+
+To be considered a RESTful API, an API needs to adhere to the following standards:
+
+	1.	Client-Server Architecture: Composed of clients, servers, and resources, managed through HTTP requests.
+	2.	Stateless Communication: Each request from client to server must contain all the information needed to understand and process the request, independent of any requests that came before it.
+	3.	Cacheability: Responses must define themselves as cacheable or not to prevent clients from reusing stale or inappropriate data in response to further requests.
+	4.	Uniform Interface: The interface between clients and servers is standardized, which involves:
+	•	Resources are uniquely identifiable and are separated from their representations that are sent to the client.
+	•	Clients can manipulate resources through representations, as the representations contain enough information to do so.
+	•	Self-descriptive messages: Each message contains enough information to describe how to process the message.
+	•	Hypermedia as the Engine of Application State (HATEOAS): After accessing a resource, clients should be able to use hyperlinks to discover all available actions they can perform.
+	5.	Layered System: The system is composed of hierarchical layers where each layer cannot see beyond the immediate layer with which they are interacting, enhancing security and scalability.
+	6.	Code on Demand (optional): Servers can temporarily extend or customize client functionality by transferring executable code.
